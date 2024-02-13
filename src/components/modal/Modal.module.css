@@ -1,0 +1,16 @@
+.modalWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+}
+
+.modalContent {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
