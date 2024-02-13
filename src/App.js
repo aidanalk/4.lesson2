@@ -9,6 +9,7 @@ import {useState} from "react";
 import CountPage from "./page/countPage/CountPage";
 import Input from "./components/input/Input";
 import InputShow from "./components/inputShow/InputShow";
+import List from "./components/list/List";
 
 function App() {
     const navbar = ['Главная', 'О нас','Контакты']
@@ -25,6 +26,25 @@ function App() {
     const handleShow = () => {
         setShow(!show)
     }
+
+    const taskList = [
+    {
+      id: 1,
+      title: 'coding',
+      completed: false
+    },
+    {
+      id: 2,
+      title: 'eat',
+      completed: false
+    },
+    {
+      id: 3,
+      title: 'sleep',
+      completed: false
+    }
+  ];
+
     return (
         <>
             {
@@ -36,6 +56,9 @@ function App() {
             <CountPage/>
             <InputShow input={input}/>
             <Input placeholder={'right'} onChangeInput={onChangeInput}/>
+
+            <h1>Список задач</h1>
+            <List tasks={taskList}/>
         </>
     )
 }
