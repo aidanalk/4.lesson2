@@ -1,4 +1,6 @@
 .tasks{
+    width: 600px;
+    height: 100px;
     border: 12px red;
 }
 

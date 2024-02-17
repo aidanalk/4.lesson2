@@ -1,4 +1,5 @@
 import React from 'react';
+import classes from './InputModal.css'
 
 const Input = ({placeholder, type='text', onChangeInput}) => {
 
@@ -7,6 +8,7 @@ const Input = ({placeholder, type='text', onChangeInput}) => {
             <input placeholder={placeholder}
                    type={type}
                    onChange={onChangeInput}
+                   className={classes.input}
             />
         </>
     );
