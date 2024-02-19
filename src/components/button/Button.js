@@ -2,10 +2,10 @@ import React from 'react';
 import classes from './Button.module.css';
 
 
-export const Button = ({text}) => {
+export const Button = ({text, onClick}) => {
     return (
         <>
-            <button className={classes.textGreen}>{text}</button>
+            <button onClick={onClick} className={classes.btn}>{text}</button>
         </>
     );
 };
